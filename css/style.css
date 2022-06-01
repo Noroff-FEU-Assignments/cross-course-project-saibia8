@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center; 
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 5px 10px 10px #c3c3c3;
+}
+
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    font-family: 'Bebas Neue', 'Courier New', Courier, monospace;
+    font-size: 28px;
+    color: #031D40;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 0 15px 0 15px; 
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+}
+
+.logo {
+    margin-left: 35px;
+    width: 100px;
+    cursor: pointer;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/main-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* nav img {
+    width: 25px;
+}   */
+
+.icons {
+    margin-right: 35px;
+} 
+
+
+
+
