@@ -6,6 +6,9 @@
     padding: 0;
 }
 
+/* Header
+------------------------------------------*/
+
 nav {
     display: flex;
     align-items: center; 
@@ -52,13 +55,29 @@ header {
     background-repeat: no-repeat;
 }
 
-/* nav img {
-    width: 25px;
-}   */
-
 .icons {
     margin-right: 35px;
 } 
+
+span {
+    font-family: 'Bebas Neue', 'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+
+h1 {
+    display: block;
+    width: 1681px;
+    font-family: 'Bebas Neue', 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    color: #FFFEF7;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(3, 29, 64, 0.55);
+    letter-spacing: .3rem;
+    padding: 15px 0 15px 0;
+}
+
+
 
 
 
