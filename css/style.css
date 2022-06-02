@@ -1,4 +1,4 @@
-* {
+body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
@@ -6,6 +6,10 @@
 
 /* Header
 ------------------------------------------*/
+main {
+    background-image: url(../images/texture.png);
+}
+
 nav {
     display: flex;
     align-items: center; 
@@ -16,7 +20,6 @@ nav {
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 5px 10px 10px #c3c3c3;
 }
-
 
 nav ul li {
     display: inline-block;
@@ -52,10 +55,6 @@ header {
     background-repeat: no-repeat;
 }
 
-.icons {
-    margin-right: 35px;
-} 
-
 span {
     font-family: 'Bebas Neue', 'Courier New', Courier, monospace;
     text-decoration: underline;
@@ -75,6 +74,37 @@ h1 {
     position: relative;
     top: 50px;
 }
+
+.cta {
+    background-color: #D93D04;
+    color: #FFFEF7;
+    text-decoration: none;
+}
+
+.cta-gender {
+    background-color: #031D40;
+    color: #FFFEF7;
+}
+
+.cta-subscribe {
+    background-color: #031D40;
+    color: #FFFEF7;
+}
+
+
+
+
+
+input::placeholder {
+    color: #C8C8C8;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  footer {
+      background: #031D40;
+      color: #FFFEF7;
+  }
 
 
 

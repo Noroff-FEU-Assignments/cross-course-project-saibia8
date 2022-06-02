@@ -15,34 +15,46 @@
 <body>
     <header>  
       <nav>
-        <div><a href="index.html"><img class="logo" src="images/rainydays.png" alt="Rainy days logo with blue mountains"></a></div>
+        <a href="index.html"><img class="logo" src="images/rainydays.png" alt="Rainy days logo with blue mountains"></a>
         <ul>
           <li><a href="html/shop.html">Shop</a></li>
           <li><a href="html/about.html">About</a></li> 
           <li><a href="html/contactus.html">Contact us</a></li>
         </ul>
-        <div class="icons">
+        <ul>
           <a href="#"><img src="images/icon-search.png" alt="Search icon"></a>
           <a href="#"><img src="images/icon-cart.png" alt="Shopping cart icon"></a>
           <a href="#"><img src="images/icon-heart.png" alt="Like icon"></a>
-        </div>
+        </ul>
       </nav>
-      <section>
-        <h1>Best rain <span>jackets</span> to fit your needs! You have come to the right place.</h1>
-        <a href="#">Buy now</a>
-      </section>
     </header>
     
     <main>
       <section>
-        <a href="#">Women Jackets</a>
-        <a href="#">Men Jackets</a>
-        <img src="images/mens-rain-jacket.png" alt="Gray-orange men's rain jacket. Price 44€">
-        <img src="images/womens-scott-run-jacket.png" alt="Gray women's run jacket. Price 32€">
-        <img src="images/mens-running-jacket.png" alt="Orange-black men's running jacket. Price 26€">
-        <a href="#">Buy now</a>
-        <a href="#">Buy now</a>
-        <a href="#">Buy now</a>
+        <h1>Best rain <span>jackets</span> to fit your needs! You have come to the right place.</h1>
+        <a href="#" class="cta">Buy now</a>
+      </section>
+      <section>
+        <a href="#" class="cta-gender">Women Jackets</a>
+        <a href="#" class="cta-gender">Men Jackets</a>
+        <div>
+          <img src="images/mens-rain-jacket.png" alt="Gray-orange men's rain jacket. Price 44€">
+          <h2>Men's Rain Jacket</h2>
+          <p>44€</p>
+          <a href="#" class="cta">Buy now</a>
+        </div>
+        <div>
+          <img src="images/womens-scott-run-jacket.png" alt="Gray women's run jacket. Price 32€">
+          <h2>Women's Scott Run Jacket</h2>
+          <p>32€</p>
+          <a href="#" class="cta">Buy now</a>
+        </div>
+        <div>
+          <img src="images/mens-running-jacket.png" alt="Orange-black men's running jacket. Price 26€">
+          <h2>Men's Running Jacket</h2>
+          <p>26€</p>
+          <a href="#" class="cta">Buy now</a>
+        </div>
       </section>
       <section>
         <div>
@@ -66,11 +78,13 @@
         <div>
           <h2>Subscribe to our news letter</h2>
           <p>Sign up for our weekly newsletter to get the latest news, updates and amazing offers delivered directly into your inbox</p>
-          <a href="#">Subscribe</a>
+          <form action="">
+            <input placeholder="Enter your email">
+          </form>
+          <a href="#" class="cta-subscribe">Subscribe</a>
         </div>
       </section>
     </main>
-
 
     <footer>
         Copyright &copy;
