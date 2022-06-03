@@ -10,7 +10,44 @@ main {
     background-image: url(../images/texture.png);
 }
 
+nav,
+#menu-checkbox {
+    display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+    display: block;
+
+}
+
+header {
+    position: relative;
+    background: #F5F5F5;
+    color: #031D40;
+    padding: 10px;
+    font-size: 1rem;
+    box-shadow: 5px 10px 10px #c3c3c3;
+}
+
 nav {
+    position: absolute;
+    background: #F5F5F5;
+    left: 0;
+}
+
+nav a {
+    display: block;
+    color: #031D40;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+
+
+/* nav {
     display: flex;
     align-items: center; 
     align-content: center;
@@ -37,7 +74,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    text-decoration-thickness: 4px;
+    text-decoration-thickness: 4px; */
 }
 
 .logo {
@@ -46,13 +83,25 @@ nav a:hover {
     cursor: pointer;
 }
 
-header {
-    height: 100vh;
-    width: 100%;
+.welcome {
     background-image: url(../images/main-photo.jpg);
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    min-height: 100vh;
+    position: relative;
+}
+
+.welcome__content {
+    position: absolute;
+    top: 100px;
+    left: 180px;
+    text-align: right;
+}
+
+.welcome__content a {
+    position: relative;
+    top: 44px;
 }
 
 span {
@@ -65,13 +114,14 @@ h1 {
     margin: auto;
     font-family: 'Bebas Neue', 'Courier New', Courier, monospace;
     font-size: 3rem;
+    font-weight: bold;
     color: #FFFEF7;
     text-transform: uppercase;
     text-align: center;
     background-color: rgba(3, 29, 64, 0.55);
     letter-spacing: .3rem;
-    padding: 15px 0 15px 0;
-    position: relative;
+    padding: 15px 80px;
+    /* position: relative; */
     top: 50px;
 }
 
@@ -79,16 +129,31 @@ h1 {
     background-color: #D93D04;
     color: #FFFEF7;
     text-decoration: none;
+    font-size: 1,3em;
+    padding: 15px 70px;
+    border-radius: 8px;
 }
 
 .cta-gender {
     background-color: #031D40;
     color: #FFFEF7;
+    text-decoration: none;
+    font-size: 1.9em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    padding: 10px 80px;
+    border-radius: 2px;
 }
 
 .cta-subscribe {
     background-color: #031D40;
     color: #FFFEF7;
+    text-decoration: none;
+    font-size: 1,3em;
+    padding: 20px 60px;
+    border-radius: 8px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
 }
 
 
@@ -101,6 +166,11 @@ input::placeholder {
     font-weight: bold;
   }
 
+  input {
+      border: 1px solid #707070;
+      border-radius: 4px;
+  }
+
   footer {
       background: #031D40;
       color: #FFFEF7;
@@ -108,7 +178,20 @@ input::placeholder {
 
 
 
+@media (min-width: 600px) {
+nav {
+    display: block;
+    position: static;
+}
 
+.hamburger-icon {
+    display: none;
+}
+
+nav a {
+    display: inline-block;
+}
+}
 
 
 

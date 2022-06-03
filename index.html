@@ -13,26 +13,26 @@
 </head>
 
 <body>
-    <header>  
+    <header> 
+      <input type="checkbox" id="menu-checkbox"> 
+      <label for="menu-checkbox" class="hamburger-icon"><i class="fa-regular fa-bars"></i></label>
       <nav>
-        <a href="index.html"><img class="logo" src="images/rainydays.png" alt="Rainy days logo with blue mountains"></a>
-        <ul>
-          <li><a href="html/shop.html">Shop</a></li>
-          <li><a href="html/about.html">About</a></li> 
-          <li><a href="html/contactus.html">Contact us</a></li>
-        </ul>
-        <ul>
-          <a href="#"><img src="images/icon-search.png" alt="Search icon"></a>
-          <a href="#"><img src="images/icon-cart.png" alt="Shopping cart icon"></a>
-          <a href="#"><img src="images/icon-heart.png" alt="Like icon"></a>
-        </ul>
+        <!-- <a href="index.html"><img class="logo" src="images/rainydays.png" alt="Rainy days logo with blue mountains"></a> -->
+        <a href="html/shop.html">Shop</a>
+        <a href="html/about.html">About</a>
+        <a href="html/contactus.html">Contact us</a>
+        <!-- <a href="#"><img src="images/icon-search.png" alt="Search icon"></a>
+        <a href="#"><img src="images/icon-cart.png" alt="Shopping cart icon"></a>
+        <a href="#"><img src="images/icon-heart.png" alt="Like icon"></a> -->
       </nav>
     </header>
     
     <main>
-      <section>
-        <h1>Best rain <span>jackets</span> to fit your needs! You have come to the right place.</h1>
-        <a href="#" class="cta">Buy now</a>
+      <section class="welcome">
+        <div class="welcome__content">
+          <h1>Best rain <span>jackets</span> to fit your needs! You have come to the right place.</h1>
+          <a href="#" class="cta">Buy now</a>
+        </div>
       </section>
       <section>
         <a href="#" class="cta-gender">Women Jackets</a>
@@ -78,8 +78,9 @@
         <div>
           <h2>Subscribe to our news letter</h2>
           <p>Sign up for our weekly newsletter to get the latest news, updates and amazing offers delivered directly into your inbox</p>
-          <form action="">
-            <input placeholder="Enter your email">
+          <form method="post">
+            <label for="email">Your email</label>
+            <input placeholder="Enter your email" type="email" id="email">
           </form>
           <a href="#" class="cta-subscribe">Subscribe</a>
         </div>
