@@ -1,214 +1,46 @@
-/* Global
+/* Global styles 
 ------------------------------------------*/
-body {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+* {
+    list-style: none;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
-/* Header
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/* Navbar
 ------------------------------------------*/
-main {
-    background-image: url(../images/texture.png);
-}
-
-nav,
-#menu-checkbox {
-    display: none;
-}
-
-#menu-checkbox:checked ~ nav {
-    display: block;
-
-}
-
 header {
     display: flex;
-    align-items: center;
-    position: relative;
-    background: #F5F5F5;
-    color: #031D40;
-    padding: 10px;
-    font-size: 1rem;
-    box-shadow: 5px 10px 10px #c3c3c3;
-}
-
-nav {
-    position: absolute;
-    background: #F5F5F5;
-    left: 0;
-}
-
-nav a {
-    display: block;
-    color: #031D40;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1rem;
-    padding: 10px 20px;
-}
-
-
-
-/* nav {
-    display: flex;
-    align-items: center; 
-    align-content: center;
     justify-content: space-between;
-    width: 100%;
-    height: 90px;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 5px 10px 10px #c3c3c3;
-}
-
-nav ul li {
-    display: inline-block;
+    width: 100%;
+    height: 138px;
 }
 
 nav a {
     font-family: 'Bebas Neue', 'Courier New', Courier, monospace;
-    font-size: 28px;
+    font-size: 30px;
     color: #031D40;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 20px;
-    margin: 0 15px 0 15px; 
 }
 
-nav a:hover {
+nav ul a:hover {
     text-decoration: underline;
-    text-decoration-thickness: 4px; */
+    text-decoration-thickness: 4px; 
+}
 
-
-.logo  {
-    width: 150px;
+.logo {
     cursor: pointer;
 }
 
-
-.welcome {
-    background-image: url(../images/main-photo.jpg);
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: bottom;
-    min-height: 100vh;
-    position: relative;
+.nav__links {
+    list-style: none;
 }
-
-.welcome__content {
-    position: absolute;
-    top: 100px;
-    left: 180px;
-    text-align: right;
-}
-
-.welcome__content a {
-    position: relative;
-    top: 44px;
-}
-
-span {
-    font-family: 'Bebas Neue', 'Courier New', Courier, monospace;
-    text-decoration: underline;
-}
-
-h1 {
-    width: auto;
-    margin: auto;
-    font-family: 'Bebas Neue', 'Courier New', Courier, monospace;
-    font-size: 3rem;
-    font-weight: bold;
-    color: #FFFEF7;
-    text-transform: uppercase;
-    text-align: center;
-    background-color: rgba(3, 29, 64, 0.55);
-    letter-spacing: .3rem;
-    padding: 15px 80px;
-    top: 50px;
-}
-
-.cta {
-    background-color: #D93D04;
-    color: #FFFEF7;
-    text-decoration: none;
-    font-size: 1,3em;
-    padding: 15px 70px;
-    border-radius: 8px;
-}
-
-.gender__cta {
-    background-color: #031D40;
-    color: #FFFEF7;
-    text-decoration: none;
-    font-size: 1.9em;
-    letter-spacing: 0.1em;
-    font-weight: bold;
-    padding: 10px 60px;
-    border-radius: 2px;
-    margin: 0 40px;
-}
-
-.cta-subscribe {
-    background-color: #031D40;
-    color: #FFFEF7;
-    text-decoration: none;
-    font-size: 1,3em;
-    padding: 20px 60px;
-    border-radius: 8px;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-}
-
-.gender {
-    position: relative;
-    top: 50px;
-    
-    text-align: center;
-}
-
-hr {
-    position: relative;
-    width: 15%;
-    margin-left: 40px;
-    border: 2px solid #707070;
-    }
-
-
-input::placeholder {
-    color: #C8C8C8;
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-
-  input {
-      border: 1px solid #707070;
-      border-radius: 4px;
-  }
-
-  footer {
-      background: #031D40;
-      color: #FFFEF7;
-  }
-
-
-/* @media
-------------------------------------------*/
-@media (min-width: 600px) {
-nav {
-    display: block;
-    position: static;
-}
-
-.hamburger-icon {
-    display: none;
-}
-
-nav a {
-    display: inline-block;
-}
-}
-
-
-
-
