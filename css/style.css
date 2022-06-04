@@ -13,7 +13,7 @@ main {
 }
 
 nav,
-#menu-checkbox {
+#menu-checkbox{
     display: none;
 }
 
@@ -24,33 +24,45 @@ nav,
 
 header {
     position: relative;
+    
 }
 
 nav {
     position: absolute;
-    /* background: ; */
-    top: 70px;
-    left: 200px;
+    background: ;
+    top: 50px;
+    left: 0px;
 }
 
 nav a {
     display: block;
-    color: palevioletred;
+    color: #031D40;
+    background-color: white;
+    text-decoration: none;
+    font-size: 30px;
     padding: 10px 20px;
 }
 
 .logo {
-    width: 150px;
-    padding: 20px
+    width: 88px;
+    height: 33px;
+    margin-left: 88px;
 }
 
-.icons {
+.like {
     display: none;
 }
 
+.icons {
+    margin-left: 100px
+}
+
+.hamburger-icon {
+        margin: 36px;
+    }
 
 header section {
-    display: inline-block;
+    display: inline;
 }
 
 
@@ -61,7 +73,6 @@ header section {
     background-position-y: bottom;
     min-height: 100vh;
 }
-
 
 @media (min-width: 600px){
     nav {
@@ -77,5 +88,7 @@ header section {
     .icons {
         display: inline-block;
     }
-
+    .like {
+      display: inline;
+    }
 }
