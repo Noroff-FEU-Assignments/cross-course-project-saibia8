@@ -21,7 +21,6 @@ nav,
     display: block;
 }
 
-
 header {
     position: relative;
     
@@ -29,7 +28,6 @@ header {
 
 nav {
     position: absolute;
-    background: ;
     top: 50px;
     left: 0px;
 }
@@ -46,7 +44,7 @@ nav a {
 .logo {
     width: 88px;
     height: 33px;
-    margin-left: 88px;
+    margin-left: 58px;
 }
 
 .like {
@@ -54,7 +52,7 @@ nav a {
 }
 
 .icons {
-    margin-left: 100px
+    margin-left: 30px
 }
 
 .hamburger-icon {
@@ -74,10 +72,51 @@ header section {
     min-height: 100vh;
 }
 
+.cta {
+    background-color: #D93D04;
+    color: #FFFEF7;
+    text-decoration: none;
+    font-size: 1,3em;
+    padding: 15px 70px;
+    border-radius: 8px;
+}
+
+.cta_small {
+    padding: 10px 20px;
+}
+
+.gender {
+    position: relative;
+    top: 50px;   
+    text-align: center;
+}
+
+.gender_cta {
+    background-color: #031D40;
+    color: #FFFEF7;
+    text-decoration: none;
+    font-size: 1.9em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    padding: 10px 60px;
+    border-radius: 2px;
+    margin: 0 40px;
+}
+
 @media (min-width: 600px){
+    .item {
+        padding: 10px;
+        margin: 10px;
+    }
+    .container {
+        display: flex;
+    }
+    .logo{
+        padding: 10px;
+        margin: 5px;
+    }
     nav {
-        display: block;
-        position: static;
+        display: inline-block;
     }
     .hamburger-icon {
         display: none;
