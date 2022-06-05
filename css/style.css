@@ -61,13 +61,12 @@ nav a {
 }
 
 .hamburger-icon {
-        margin: 36px;
-    }
+    margin: 36px;
+}
 
 header section {
     display: inline;
 }
-
 
 .welcome {
     background-image: url(../images/main-photo.jpg);
@@ -129,33 +128,42 @@ header section {
         padding: 10px;
         margin: 10px;
     }
+
     .container {
         display: flex;
     }
+
     .logo{
         padding: 10px;
         margin: 5px;
     }
+
     nav {
         display: inline-block;
     }
+
     .hamburger-icon {
         display: none;
     }
+
     nav a {
         display: inline-block;
     }
+
     .icons {
         display: inline-block;
     }
+
     .like {
       display: inline;
     }
+
     .gender {
         display: flex;
         justify-content: center;
         margin-top: 44px;
     }
+
     .cta {
         background-color: #D93D04;
         color: #FFFEF7;
@@ -198,99 +206,156 @@ header section {
     }
 
     .cta_small:hover {
-    background-color: #fff;
-    color: #D93D04;
-    text-decoration: none;
-    font-size: 1,3em;
-    padding: 15px 44px;
-    border-radius: 8px;
-    text-align: center;
-    border: 2px solid #D93D04;
-}
+        background-color: #fff;
+        color: #D93D04;
+        text-decoration: none;
+        font-size: 1,3em;
+     padding: 15px 44px;
+        border-radius: 8px;
+        text-align: center;
+        border: 2px solid #D93D04;
+    }
 
-.type-container {
-    display: flex;
-    margin-top: 95px;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-grow: 1;
-}
-.type-jackets {
-    padding: 10px;
-    margin: 0px 33px 0px 33px;
-}
+    .type-container {
+        display: flex;
+        margin-top: 95px;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+    .type-jackets {
+     padding: 10px;
+        margin: 0px 33px 0px 33px;
+    }
 
-.type-container p {
-    font-family: 'Bebas Neue', 'Courier New', Courier, monospace;
-    font-size: 26px;
-    font-weight: bold;
-    color: #031D40;
-    letter-spacing: 0.1em;
-    cursor: pointer;
-    padding: 0 10px;
-}
+    .type-container p {
+        font-family: 'Bebas Neue', 'Courier New', Courier, monospace;
+        font-size: 26px;
+        font-weight: bold;
+        color: #031D40;
+        letter-spacing: 0.1em;
+        cursor: pointer;
+        padding: 0 10px;
+    }
 
-.type-container p:hover {
-    color: #A9CFD8;
-}
+    .type-container p:hover {
+        color: #A9CFD8;
+    }
 
-.cta-subscribe {
-    background-color: #031D40;
-    color: #FFFEF7;
-    text-decoration: none;
-    font-size: 26px;
-    padding: 20px 60px;
-    border-radius: 8px;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-}
+    .cta-subscribe {
+        background-color: #031D40;
+        color: #FFFEF7;
+        text-decoration: none;
+        font-size: 26px;
+        padding: 20px 60px;
+        border-radius: 8px;
+        font-weight: bold;
+     letter-spacing: 0.1em;
+        margin-left: 26px;
+    }
 
-.subscribe-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-grow: 1;
-}
+    .cta-subscribe:hover {
+        background-color: #fff;
+        color: #031D40;
+        text-decoration: none;
+        font-size: 26px;
+        padding: 20px 60px;
+        border-radius: 8px;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        border: 2px solid #031D40;
+    }
 
-.subscribe-container h2 {
-    font-family: 'Bebas Neue', 'Courier New', Courier, monospace;
-    font-size: 44px;
-    font-weight: bold;
-    color: #031D40;
-    letter-spacing: 0.1em;
-    cursor: pointer;
-    padding: 10px 10px;
-    margin-top: 55px;
-}
+    .subscribe-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
 
-.subscribe-container p {
-    color: #A9CFD8;
-    font-weight: bold;
-    font-size: 26px;
-}
+    .subscribe-container h2 {
+        font-family: 'Bebas Neue', 'Courier New', Courier, monospace;
+        font-size: 44px;
+        font-weight: bold;
+        color: #031D40;
+        letter-spacing: 0.1em;
+        cursor: pointer;
+        padding: 10px 10px;
+        margin-top: 55px;
+    }
 
-.subscribe-container input {
-    height: 68px;
-    width: 795px;
-    border: 1px solid #707070;
-    border-radius: 4px;
-    padding-left: 20px;
-    margin-top: 42px;
-}
-input::placeholder {
-    color: #C8C8C8;
-    font-size: 26px;
-    font-weight: bold;
-    
-  }
+    .subscribe-container p {
+        color: #A9CFD8;
+        font-weight: bold;
+        font-size: 26px;
+        flex-wrap: wrap;
+    }
 
+    .subscribe-container input {
+        height: 68px;
+        width: 795px;
+        border: 1px solid #707070;
+        border-radius: 4px;
+        padding-left: 20px;
+    }
 
-  footer {
-      background: #031D40;
-      color: #FFFEF7;
-      height: 192px;
-  }
+    input::placeholder {
+        color: #C8C8C8;
+        font-size: 26px;
+        font-weight: bold;
+     }
 
+    .form__subscribe {
+        display: flex;
+        margin: 42px 0px 80px 0px;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        background: #031D40;
+        color: #FFFEF7;
+        height: 192px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer__info {
+        margin: 30px 0px 0px 110px;
+    }
+
+    .footer__info p {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 7px 0px;
+    }
+
+    .footer__info .footer__bold {
+        font-size: 24px;
+        font-weight: bold;
+    }
+ 
+    .footer__info .footer__bold:hover {
+        font-size: 24px;
+        font-weight: bold;
+        color: #A9CFD8;
+        cursor: pointer;
+    }
+
+    .footer__info p:hover {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 7px 0px;
+        color: #A9CFD8;
+        cursor: pointer;
+    }
+
+    .footer__info:nth-of-type(5) {
+        margin-left: auto;
+        margin-right: 100px;
+    }
 }
