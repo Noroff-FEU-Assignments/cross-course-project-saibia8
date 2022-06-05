@@ -39,7 +39,7 @@ nav a {
     text-decoration: none;
     font-size: 30px;
     padding: 10px 20px;
-}
+} 
 
 .logo {
     width: 88px;
@@ -86,9 +86,9 @@ header section {
 }
 
 .gender {
-    position: relative;
-    top: 50px;   
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 44px;
 }
 
 .gender_cta {
@@ -104,11 +104,17 @@ header section {
 }
 
 .gender_cta:hover {
-    background: #fff;
-    border: 2px solid #031D40;
-    border-radius: 2px;
+    background-color: #fff;
     color: #031D40;
-
+    border: 2px solid #031D40;
+    text-decoration: none;
+    font-size: 1.9em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    padding: 6px 56px;
+    border-radius: 2px;
+    margin: 0 40px;
+    cursor: pointer;
 }
 
 
@@ -140,4 +146,33 @@ header section {
     .like {
       display: inline;
     }
+    .gender {
+        display: flex;
+        justify-content: center;
+        margin-top: 44px;
+    }
+
+    .cta {
+        background-color: #D93D04;
+        color: #FFFEF7;
+        text-decoration: none;
+        font-size: 1,3em;
+        padding: 15px 44px;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .jackets-container {
+        display: flex;
+        margin-top: 63px;
+        justify-content: space-around;
+    }
+
+    .jackets {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-bottom: 40px;
+    }
+
 }
