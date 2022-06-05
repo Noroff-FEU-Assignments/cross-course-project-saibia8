@@ -103,6 +103,16 @@ header section {
     margin: 0 40px;
 }
 
+.gender_cta:hover {
+    background: #fff;
+    border: 2px solid #031D40;
+    border-radius: 2px;
+    color: #031D40;
+
+}
+
+
+
 @media (min-width: 600px){
     .item {
         padding: 10px;
