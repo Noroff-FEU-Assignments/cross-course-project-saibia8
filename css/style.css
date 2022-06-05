@@ -7,6 +7,11 @@ body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 
 main {
     background-image: url(../images/texture.png);
@@ -151,7 +156,6 @@ header section {
         justify-content: center;
         margin-top: 44px;
     }
-
     .cta {
         background-color: #D93D04;
         color: #FFFEF7;
@@ -165,14 +169,69 @@ header section {
     .jackets-container {
         display: flex;
         margin-top: 63px;
-        justify-content: space-around;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-grow: 1;
     }
 
     .jackets {
         display: flex;
         flex-direction: column;
+        flex-basis: 374px;
         align-items: start;
-        padding-bottom: 40px;
+        padding: 20px;
+        margin: 0px 60px 0px 60px;
     }
+
+    .jackets:nth-last-of-type(1) {
+        flex-grow: 1;
+    }
+
+    .jackets:nth-last-of-type(2) img {
+        flex-grow: 2;
+        width: 496px;
+        height: 636px;  
+    }
+
+    .jackets:nth-last-of-type(2) {
+        flex-grow: 1;
+    }
+
+    .cta_small:hover {
+    background-color: #fff;
+    color: #D93D04;
+    text-decoration: none;
+    font-size: 1,3em;
+    padding: 15px 44px;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid #D93D04;
+}
+
+.type-container {
+    display: flex;
+    margin-top: 195px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.type-jackets {
+    padding: 10px;
+    margin: 0px 33px 0px 33px;
+}
+
+.type-container p {
+    font-family: 'Bebas Neue', 'Courier New', Courier, monospace;
+    font-size: 26px;
+    font-weight: bold;
+    color: #031D40;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.type-container p:hover {
+    color: #A9CFD8;
+}
 
 }
