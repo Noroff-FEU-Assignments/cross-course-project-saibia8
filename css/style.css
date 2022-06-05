@@ -210,7 +210,7 @@ header section {
 
 .type-container {
     display: flex;
-    margin-top: 195px;
+    margin-top: 95px;
     justify-content: center;
     flex-wrap: wrap;
     flex-grow: 1;
@@ -233,5 +233,64 @@ header section {
 .type-container p:hover {
     color: #A9CFD8;
 }
+
+.cta-subscribe {
+    background-color: #031D40;
+    color: #FFFEF7;
+    text-decoration: none;
+    font-size: 26px;
+    padding: 20px 60px;
+    border-radius: 8px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.subscribe-container h2 {
+    font-family: 'Bebas Neue', 'Courier New', Courier, monospace;
+    font-size: 44px;
+    font-weight: bold;
+    color: #031D40;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    padding: 10px 10px;
+    margin-top: 55px;
+}
+
+.subscribe-container p {
+    color: #A9CFD8;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.subscribe-container input {
+    height: 68px;
+    width: 795px;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    padding-left: 20px;
+    margin-top: 42px;
+}
+input::placeholder {
+    color: #C8C8C8;
+    font-size: 26px;
+    font-weight: bold;
+    
+  }
+
+
+  footer {
+      background: #031D40;
+      color: #FFFEF7;
+      height: 192px;
+  }
 
 }
