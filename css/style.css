@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -17,13 +18,25 @@ main {
     background-image: url(../images/texture.png);
 }
 
-nav,
+
 #menu-checkbox{
     display: none;
 }
 
-#menu-checkbox:checked ~ nav {
-    display: block;
+.nav {
+    display: none;  
+}
+
+.item {
+    margin: 10px;
+}
+
+.nav_mob {
+    display: none;
+}
+
+#menu-checkbox:checked ~ .nav_mob {
+    display: flex;
 }
 
 header {
@@ -31,37 +44,62 @@ header {
     
 }
 
-nav {
-    position: absolute;
-    top: 50px;
-    left: 0px;
-}
-
-nav a {
-    display: block;
-    color: #031D40;
-    background-color: white;
-    text-decoration: none;
-    font-size: 30px;
-    padding: 10px 20px;
-} 
-
-.logo {
+.navbar .logo {
     width: 88px;
     height: 33px;
-    margin-left: 58px;
 }
 
-.like {
+.navbar a {
+    font-family: 'Bebas Neue', 'Courier New', Courier, monospace;
+    color: #031D40;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    color: #031D40;
+    height: 60px;
+}
+
+.navbar .nav_container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar .icon {
+    width: 20px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar .icons {
+    order: 3;
+}
+
+.navbar .icon_like {
     display: none;
-}
-
-.icons {
-    margin-left: 30px
-}
-
-.hamburger-icon {
-    margin: 36px;
 }
 
 header section {
@@ -121,6 +159,122 @@ header section {
     cursor: pointer;
 }
 
+@media (max-width: 601px) {
+    footer {
+        display: none;
+    }
+
+    main {
+        background-image: none;
+    }
+    
+    .slogan :nth-child(1) {
+        display: none;
+    }
+
+    #slogan__mobile {
+        width: auto;
+        font-family: 'Bebas Neue', 'Courier New', Courier, monospace;
+        font-size: 3rem;
+        font-weight: bold;
+        color: #FFFEF7;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: rgba(3, 29, 64, 0.55);
+        letter-spacing: .3rem;
+        padding: 15px;
+        top: 50px;
+    }
+
+    .type-container p {
+        font-family: 'Bebas Neue', 'Courier New', Courier, monospace;
+        font-size: 26px;
+        font-weight: bold;
+        color: #031D40;
+        letter-spacing: 0.1em;
+        cursor: pointer;
+        padding: 0 10px;
+    }
+
+    .type-container p:hover {
+        color: #A9CFD8;
+    }
+
+    .cta-subscribe {
+        background-color: #031D40;
+        color: #FFFEF7;
+        text-decoration: none;
+        font-size: 26px;
+        padding: 20px 60px;
+        border-radius: 8px;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        margin: 20px 0px 0px 26px;
+    }
+
+    .cta-subscribe:hover {
+        background-color: #fff;
+        color: #031D40;
+        text-decoration: none;
+        font-size: 26px;
+        padding: 20px 60px;
+        border-radius: 8px;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        border: 2px solid #031D40;
+        flex-wrap: wrap;
+    }
+
+    .subscribe-container {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .subscribe-container h2 {
+        font-family: 'Bebas Neue', 'Courier New', Courier, monospace;
+        font-size: 44px;
+        font-weight: bold;
+        color: #031D40;
+        letter-spacing: 0.1em;
+        cursor: pointer;
+        padding: 10px 10px;
+        margin-top: 55px;
+    }
+
+    .subscribe-container p {
+        color: #A9CFD8;
+        font-weight: bold;
+        font-size: 26px;
+        flex-wrap: wrap;
+    }
+
+    .subscribe-container input {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        height: 68px;
+        width: 795px;
+        border: 1px solid #707070;
+        border-radius: 4px;
+        padding-left: 20px;
+    }
+
+    input::placeholder {
+        color: #C8C8C8;
+        font-size: 26px;
+        font-weight: bold;
+     }
+
+    .form__subscribe {
+        display: flex;
+        margin: 42px 0px 80px 0px;
+        flex-wrap: wrap;
+    }
+
+}
+
+
 
 
 @media (min-width: 600px){
@@ -133,31 +287,23 @@ header section {
         display: flex;
     }
 
-    .logo{
-        padding: 10px;
-        margin: 5px;
-    }
-
-    nav {
-        display: inline-block;
-    }
-
-    .hamburger-icon {
+    .navbar .nav_logo {
+        order: 1;
+    }  
+      
+    .nav_label {
         display: none;
     }
-
-    nav a {
-        display: inline-block;
+    
+     .navbar .nav {
+        display: flex;
+        order: 2;
     }
-
-    .icons {
-        display: inline-block;
+     
+      .navbar .icon_like {
+        display: inline;
     }
-
-    .like {
-      display: inline;
-    }
-
+    
     h1 {
         width: auto;
         margin-top: 120px;
@@ -173,10 +319,13 @@ header section {
         top: 50px;
     }
 
+    #slogan__mobile {
+        display: none;
+    }
+
     .slogan {
         display: flex;
         flex-direction: column;
-        margin-top: 63px;
         align-items: center;
         flex-wrap: wrap;
         flex-grow: 1;
@@ -242,7 +391,7 @@ header section {
         color: #D93D04;
         text-decoration: none;
         font-size: 1,3em;
-     padding: 15px 44px;
+        padding: 15px 44px;
         border-radius: 8px;
         text-align: center;
         border: 2px solid #D93D04;
@@ -256,7 +405,7 @@ header section {
         flex-grow: 1;
     }
     .type-jackets {
-     padding: 10px;
+        padding: 10px;
         margin: 0px 33px 0px 33px;
     }
 
@@ -282,7 +431,7 @@ header section {
         padding: 20px 60px;
         border-radius: 8px;
         font-weight: bold;
-     letter-spacing: 0.1em;
+        letter-spacing: 0.1em;
         margin-left: 26px;
     }
 

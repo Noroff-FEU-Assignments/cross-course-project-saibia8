@@ -13,35 +13,46 @@
 </head>
 
 <body>
-    <header>
-        <section>
-          <input type="checkbox" id="menu-checkbox">  
-          <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars fa-xl"></i></label>
-            <nav class="container">
-              <div class="item one">
+  <header> 
+      <nav class="navbar">
+        <div class="nav_container">
+            <div class="nav_label">
+              <input type="checkbox" id="menu-checkbox">  
+              <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars fa-xl"></i></label>
+              <nav class="nav_mob">
+                <a class="item" href="html/shop.html">Shop</a>
+                <a class="item" href="html/about.html">About</a>
+                <a class="item" href="html/contactus.html">Contact us</a>
+              </nav>
+            </div>
+            <ul class="nav">
+              <li>
                 <a href="html/shop.html">Shop</a>
-              </div>
-              <div class="item two">
+              </li>
+              <li>
                 <a href="html/about.html">About</a>
-              </div>
-              <div class="item three">
-                <a href="html/contactus.html">Contact us</a>
-              </div>
-             </nav>
-        </section>    
-        <section>
-            <a href="index.html" ><img class="logo" src="images/rainydays.png" alt="Rainy days logo with blue mountains"></a>
-        </section> 
-        <section class="icons">
-          <a href="#"><img src="images/icon-search.png" alt="Search icon"></a>
-          <a href="#"><img src="images/icon-cart.png" alt="Shopping cart icon"></a>
-          <a href="#"><img src="images/icon-heart.png" class="like" alt="Like icon"></a>
-        </section>
+              </li>
+              <li>
+                <a href="html/contactus.html">Contact us</a> 
+              </li>
+            </ul>
+            <div class="nav_logo">
+              <a href="index.html" ><img class="logo" src="images/rainydays.png" alt="Rainy days logo with blue mountains"></a>
+            </div>
+            <div class="icons">
+              <a href="#"><img class="icon icon_search" src="images/icon-search.png" alt="Search icon"></a>
+              <a href="#"><img class="icon icon_cart" src="images/icon-cart.png" alt="Shopping cart icon"></a>
+              <a href="#"><img class="icon icon_like" src="images/icon-heart.png" alt="Like icon"></a>
+            </div>
+            
+        </div>     
+      </nav>    
     </header>
     <main>
         <section class="welcome">
           <div class="slogan">
             <h1>Best rain <span>jackets</span> to fit your needs! You have come to the right place.</h1>
+            <h1 id="slogan__mobile">Best rain jackets to fit your needs!</h1>
             <a href="#" class="cta">Buy now</a>
           </div>
         </section>
@@ -94,7 +105,7 @@
         <div class="subscribe-container">
           <h2>Subscribe to our news letter</h2>
           <p>Sign up for our weekly newsletter to get the latest news, updates and amazing</p>
-          <p>offers delivered directly into your inbox</p>
+          <p>poffers delivered directly into your inbox</p>
           <div class="form__subscribe"><form method="post">
             <input placeholder="Enter your email" type="email" id="email">
             </form>
@@ -118,7 +129,7 @@
       <div class="footer__info">
         <p class="footer__bold">Address</p>
         <p>London,
-          21 Old Gloucester Street</p>
+           21 Old Gloucester Street</p>
         <p>info@rainydays.com</p>
         <p>+44 93 1284 6486</p>
       </div>
