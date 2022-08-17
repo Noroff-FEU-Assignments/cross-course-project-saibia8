@@ -1,150 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Buy all the different types of jackets from rainy days">
     <title>Rainy Days | Home</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/968ab2ea9d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header> 
-      <nav class="navbar">
-        <div class="nav_container">
-            <div class="nav_label">
-              <input type="checkbox" id="menu-checkbox">  
-              <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars fa-xl"></i></label>
-              <nav class="nav_mob">
-                <a class="item" href="html/shop.html">Shop</a>
-                <a class="item" href="html/about.html">About</a>
-                <a class="item" href="html/contactus.html">Contact us</a>
-              </nav>
-            </div>
-            <ul class="nav">
-              <li>
-                <a href="html/shop.html">Shop</a>
-              </li>
-              <li>
-                <a href="html/about.html">About</a>
-              </li>
-              <li>
-                <a href="html/contactus.html">Contact us</a> 
-              </li>
-            </ul>
-            <div class="nav_logo">
-              <a href="index.html" ><img class="logo" src="images/rainydays.png" alt="Rainy days logo with blue mountains"></a>
-            </div>
-            <div class="icons">
-              <a href="#"><img class="icon icon_search" src="images/icon-search.png" alt="Search icon"></a>
-              <a href="#"><img class="icon icon_cart" src="images/icon-cart.png" alt="Shopping cart icon"></a>
-              <a href="#"><img class="icon icon_like" src="images/icon-heart.png" alt="Like icon"></a>
-            </div>
-            
-        </div>     
-      </nav>    
+
+    <header class="primary-header">
+        <div class="container">
+            <a href="index.html"><img class="logo" src="images/Logo.png" alt="Rainy days logo with blue mountains"></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav class="primary-navigation fs-600 tt-uppercase ff-secondary">
+                <ul aria-label="primary navigation" role="list" class="nav-list" id="primary-navigation">
+                    <li><a href="html/shop.html"></a>Shop</li>
+                    <li><a href="html/about.html"></a>About</li>
+                    <li><a href="html/contact.html"></a>Contact us</li>
+                </ul>
+                <div class="icons">
+                    <ul role="list">
+                        <li><a aria-label="magnifying glass" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </li>
+                        <li><a aria-label="shopping cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li><a aria-label="like button" href="#"><i class="fa-solid fa-heart"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
     </header>
-    <main>
-        <section class="welcome">
-          <div class="slogan">
-            <h1>Best rain <span>jackets</span> to fit your needs! You have come to the right place.</h1>
-            <h1 id="slogan__mobile">Best rain jackets to fit your needs!</h1>
-            <a href="#" class="cta">Buy now</a>
-          </div>
+
+    <main class="main-bg">
+        <section class="section-one">
+            <div class="container">
+                <span class="heading-web">
+                    <h1 class="fs-primary-heading fw-bold text-primary-100 tt-uppercase">Best rain <span
+                            class="underline">jackets</span> to
+                        fit your needs! you’ve come to the right place. </h1>
+                </span>
+                <span class="heading-mobile">
+                    <h1 class="fw-bold text-primary-100 tt-uppercase">Best rain jackets to
+                        fit your needs!</h1>
+                </span>
+                <a class="button button-main" href="/html/shop.html">Buy now</a>
+            </div>
         </section>
+
         <section>
-        <div class="gender">
-          <a href="#" class="gender_cta">Women Jackets</a>
-          <a href="#" class="gender_cta">Men Jackets</a>
-        </div>
-        <div class="jackets-container">
-          <div class="jackets">
-            <img src="images/mens-rain-jacket.png" alt="Gray-orange men's rain jacket. Price 44€">
-            <h2>Men's Rain Jacket</h2>
-            <p>44€</p>
-            <a href="#" class="cta cta_small">Buy now</a>
-          </div>
-          <div class="jackets">
-            <img src="images/womens-scott-run-jacket.png" alt="Gray women's run jacket. Price 32€">
-            <h2>Women's Scott Run Jacket</h2>
-            <p>32€</p>
-            <a href="#" class="cta cta_small">Buy now</a>
-          </div>
-          <div class="jackets">
-            <img src="images/mens-running-jacket.png" alt="Orange-black men's running jacket. Price 26€">
-            <h2>Men's Running Jacket</h2>
-            <p>26€</p>
-            <a href="#" class="cta cta_small">Buy now</a>
-          </div>
-      </div>
-      </section>
-      <section>
-        <div class="type-container">
-          <div class="type-jackets">
-            <img src="images/running-jackets.jpg" alt="A man standing with a running jacket in the forest at sunset">
-            <p>Running jackets</p>
-          </div>
-          <div class="type-jackets">
-            <img src="images/winter-jackets.jpg" alt="A man standing with a winter jacket in the wintertime">
-            <p>Winter jackets</p>
-          </div>
-          <div class="type-jackets">
-            <img src="images/bike-jackets.jpg" alt="A sporty woman standing with a bicycle in the park on a sunny day">
-            <p>Bike jackets</p>
-          </div>
-          <div class="type-jackets">
-            <img src="images/motorsport-jackets.jpg" alt="A person standing in the black motorcycle suit and helmet">
-            <p>Motorsport jackets</p>
-          </div>
-      </section>
-      <section>
-        <div class="subscribe-container">
-          <h2>Subscribe to our news letter</h2>
-          <p>Sign up for our weekly newsletter to get the latest news, updates and amazing</p>
-          <p>poffers delivered directly into your inbox</p>
-          <div class="form__subscribe"><form method="post">
-            <input placeholder="Enter your email" type="email" id="email">
-            </form>
-            <a href="#" class="cta-subscribe">Subscribe</a>
-          </div>
-        </div>
-      </section>
+            <div class="container">
+                <div class="flex-center__row">
+                    <a class="button button-secondary" href="#">Women's jackets</a>
+                    <a class="button button-secondary" href="#">Men's jackets</a>
+                </div>
+                <div class="grid-row">
+                    <article class="card--small">
+                        <img src="/images/Jacket1.png" alt="Gray-orange men's rain jacket. Price 44€">
+                        <hr>
+                        <a class="float-right" href="#"><i class="fa-solid fa-heart"></i></a>
+                            <div class="flex-left">
+                                <p class="fw-bold fs-400">Men's rain jacket</p>
+                                <p class="fw-bold fs-400">44 &#8364;</p>
+                            </div>
+                            <a class="button button-main" href="/html/shop.html">Buy now</a>
+                    </article>
+                    <article class="card--large">
+                        <img src="/images/Jacket2.png" alt="Gray women's run jacket. Price 32€">
+                        <hr>
+                        <a class="float-right" href="#"><i class="fa-solid fa-heart"></i></a>
+                        <div class="flex-left">
+                            <p class="fw-bold fs-400">Women's Scott run jacket </p>
+                            <p class="fw-bold fs-400">32 &#8364;</p>
+                        </div>
+                        <a class="button button-main" href="/html/shop.html">Buy now</a>
+                    </article>
+                    <article class="card--small">
+                        <img src="/images/Jacket3.png" alt="Orange-black men's running jacket. Price 26€">
+                        <hr>
+                        <a class="float-right" href="#"><i class="fa-solid fa-heart"></i></a>
+                        <div class="flex-left">
+                            <p class="fw-bold fs-400">Men's rain jacket</p>
+                            <p class="fw-bold fs-400">26 &#8364;</p>
+                        </div>
+                        <a class="button button-main" href="/html/shop.html">Buy now</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container grid-column ff-secondary tt-uppercase">
+                <div>
+                    <img class="gallery-img" src="/images/Runnig.jpg" alt="A man standing with a running jacket in the forest at sunset">
+                    <p class="fs-500">Runnig jackets</p>
+                </div>
+                <div>
+                    <img class="gallery-img" src="/images/Winter.png" alt="A man standing with a winter jacket in the wintertime">
+                    <p class="fs-500">Winter jackets</p>
+                </div>
+                <div>
+                    <img class="gallery-img" src="/images/Bike.jpg" alt="Sporty woman standing with a bicycle in the park on a sunny day">
+                    <p class="fs-500">Bike jackets</p>
+                </div>
+                <div>
+                    <img class="gallery-img" src="/images/Motorsport.jpg" alt="A person standing in the black motorcycle suit and helmet">
+                    <p class="fs-500">Motorsport Jackets</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container subscription">
+                <div>
+                    <h2 class="ff-secondary tt-uppercase fs-600">Subscribe to our newsletter</h2>
+                </div>
+                <div>
+                    <p class="text-primary-300">Sign up for our weekly newsletter to get the latest news, updates and
+                        amazing offers delivered
+                        directly into your inbox</p>
+                </div>
+                <div class="form__subscribe">
+                    <form method="post">
+                        <input placeholder="Enter your email" type="email" id="email">
+                    </form>
+                    <button class="button button-secondary">Subscribe</button>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="footer-container">
-      <div class="footer__info">
-        <p class="footer__bold">About us</p>
-        <p>About us</p>
-        <p>Blog</p>
-      </div>
-      <div class="footer__info">
-        <p class="footer__bold">Products</p>
-        <p>Women's Jackets</p>
-        <p>Men's Jackets</p>
-      </div>
-      <div class="footer__info">
-        <p class="footer__bold">Address</p>
-        <p>London,
-           21 Old Gloucester Street</p>
-        <p>info@rainydays.com</p>
-        <p>+44 93 1284 6486</p>
-      </div>
-      <div class="footer__info">
-        <p class="footer__bold">Help</p>
-        <p>FAQ</p>
-      </div>
-      <div class="footer__info">
-        <p class="footer__bold">Follow us</p> 
-        <a href="#"><img src="images/facebook.png" alt="Facebook icon"></a>
-        <a href="#"><img src="images/instagram.png" alt="Instagram icon"></a>
-        <a href="#"><img src="images/twitter.png" alt="Twitter icon"></a>
-        <p>&copy;2022 Rainydays.</p> 
-        <p>All Rights Reserved.</p>
-      </div>
-    </footer> 
+    <footer class="text-primary-100 bg-primary">
+        <div class="container grid-row">
+            <div>
+                <p class="tt-uppercase">About us</p>
+                <ul aria-label="footer" role="list" class="footer-list">
+                    <li><a href="html/about.html">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="tt-uppercase">Products</p>
+                <ul aria-label="footer" role="list" class="footer-list">
+                    <li><a href="html/shop.html">Women's jackets</a></li>
+                    <li><a href="html/shop.html">Men's jackets</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul aria-label="footer" role="list" class="footer-list">
+                    <li class="tt-uppercase">Address</li>
+                    <li>London, 21 Old Gloucester Street</li>
+                    <li>info@rainydays.com</li>
+                    <li>+44 93 1284 6486</li>
+                </ul>
+            </div>
+            <div>
+                <ul aria-label="footer" role="list" class="footer-list">
+                    <li class="tt-uppercase">Help</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div>
+                <p class="tt-uppercase">Follow us</p>
+                <div class="icons">
+                    <ul aria-label="footer" role="list" class="footer-list">
+                        <li><a aria-label="facebook" href="https://www.facebook.com/" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a aria-label="instagram" href="https://www.instagram.com/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a aria-label="twitter" href="https://twitter.com/?lang=en" target="_blank"><i
+                                    class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <p>&#169; 2022 Rainydays. All Rights Reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
 </body>
+
 </html>
