@@ -565,7 +565,6 @@ footer a:hover {
 .grid-column1 {
   display: grid;
   grid-template-columns: 1fr;
-  justify-items: start;
   gap: 1rem;
 }
 
@@ -580,13 +579,22 @@ footer a:hover {
   list-style-position: inside;
 }
 
-.bubu {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1rem;
+.jacket-size__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
 }
 
 .size-list > li {
   border: 1px solid var(--clr-neutral-900);
+  text-align: center;
+  background-color: #fff;
+  padding: var(--padding-100);
+}
+
+@media (min-width: 55em) {
+    .grid-column1 {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
 }
