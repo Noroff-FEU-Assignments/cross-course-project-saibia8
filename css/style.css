@@ -210,11 +210,11 @@ svg {
 }
 
 .drop-shadow {
-    filter: drop-shadow(4px 5px 4px var(--clr-neutral-900));
+  filter: drop-shadow(4px 5px 4px var(--clr-neutral-900));
 }
 
 .inline-block {
-    display: inline-block;
+  display: inline-block;
 }
 
 .container {
@@ -517,11 +517,40 @@ footer a:hover {
   color: var(--clr-primary-200);
 }
 
-
 /* Shop page */
 
 .filter {
   margin: 1rem;
 }
 
+.card {
+  position: relative;
+  top: 0;
+  right: 0;
+  border: 1px solid var(--clr-neutral-900);
+  padding: 1rem;
+  background-color: #fff;
+}
+.card i {
+  position: absolute;
+  top: 0.7rem;
+  right: 1.3rem;
+}
 
+.card-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 0.4rem;
+}
+
+.main-bg {
+  display: hidden;
+}
+
+@media (min-width: 55em) {
+  .card {
+    margin: 2rem 0 4rem 0;
+  }
+}
