@@ -376,6 +376,7 @@ body {
 
 .main-bg {
   background-image: url(../images/Texture2.png);
+  padding: 1rem 0;
 }
 
 .section-one {
@@ -519,10 +520,6 @@ footer a:hover {
 
 /* Shop page */
 
-.filter {
-  margin: 1rem;
-}
-
 .card {
   position: relative;
   top: 0;
@@ -531,6 +528,13 @@ footer a:hover {
   padding: 1rem;
   background-color: #fff;
 }
+
+@media (min-width: 55em) {
+  .card {
+    margin: 2rem 0 0rem 0;
+  }
+}
+
 .card i {
   position: absolute;
   top: 0.7rem;
@@ -545,12 +549,44 @@ footer a:hover {
   gap: 0.4rem;
 }
 
-.main-bg {
-  display: hidden;
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media (min-width: 55em) {
-  .card {
-    margin: 2rem 0 4rem 0;
-  }
+.filter h1 {
+  position: relative;
+  right: 1.8rem;
+}
+
+/* Jacket page */
+
+.grid-column1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: start;
+  gap: 1rem;
+}
+
+.jacket-position {
+  justify-self: center;
+  border: 1px solid var(--clr-neutral-900);
+  padding: var(--padding-200);
+  background-color: #fff;
+}
+
+.jacket-details li {
+  list-style-position: inside;
+}
+
+.bubu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.size-list > li {
+  border: 1px solid var(--clr-neutral-900);
 }
