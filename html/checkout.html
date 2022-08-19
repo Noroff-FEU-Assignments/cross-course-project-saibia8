@@ -15,16 +15,14 @@
 </head>
 
 <body>
-
     <header class="primary-header">
         <div class="container">
-            <a href="../index.html"><img class="logo" src="../images/Logo.png"
-                    alt="Rainy days logo with blue mountains"></a>
+            <a href="../index.html"><img class="logo" src="../images/Logo.png" alt="Rainy days logo with blue mountains"></a>
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <nav class="primary-navigation fs-600 tt-uppercase ff-secondary">
                 <ul aria-label="primary navigation" role="list" class="nav-list" id="primary-navigation">
-                    <li><a href="../index.html"></a>Home</li>
-                    <li><a href="shop.html"></a>Shop</li>
+                    <li><a href="index.html"></a>Home</li>
+                    <li><a href="html/shop.html"></a>Shop</li>
                     <li><a href="html/about.html"></a>About</li>
                     <li><a href="html/contact.html"></a>Contact us</li>
                     <li><a href="#"></a>Help</li>
@@ -46,47 +44,39 @@
 
     <main class="main-bg">
         <div class="container grid-column1">
-            <div class="jacket-position">
-                <a class="float-right" href="#"><i class="fa-solid fa-heart"></i></a>
-                <img class="drop-shadow" src="../images/Jacket2.png" alt="Gray women's run jacket. Price 32€">
-            </div>
-            <div>
-                <div>
-                    <h2 class="fw-bold">Regatta Jacket</h2>
-                    <h3 class="fw-bold fs-400">32 &#8364;</h3>
-                </div>
-                <div>
-                    <p>The SCOTT RC Run Waterproof Women's Jacket matches the requirements for mandatory waterproof
-                        equipment
-                        established by the Skyrunner World Series and Ultra Trail World Tour. The lightweight PERTEX®
-                        Shield
-                        fabric and fully taped seams will protect athletes from the elements without slowing them down.
-                        This
-                        jacket is also breathable by design with strategically placed vent panels and side zippers.</p>
-                    <div>
-                        <p class="tt-uppercase">Key features</p>
-                        <ul class="jacket-details">
-                            <li>Waterproofness: 20.000 mm</li>
-                            <li>Breathability: 20.000g/m2/day</li>
-                            <li>Taped Seams</li>
-                            <li>Ultra lightweight</li>
-                            <li>Breathable design </li>
-                        </ul>
+            <section class="checkout-title">
+                <h1 class="fs-600 fw-bold checkout-title">My cart</h1>
+                <div class="checkout-mobile">
+                    <div class="card-flex">
+                        <h2 class="fs-500 fw-bold">Product details</h2>
+                        <a class="text-primary-400" href="#"><i class="fa-solid fa-trash-can"></i>Remove</a>
                     </div>
-                    <p class="fs-500 fw-bold">Select size</p>
-                    <ul class="tt-uppercase fs-500 size-list jacket-size__grid" role="list">
-                        <li>xs</li>
-                        <li>s</li>
-                        <li>m</li>
-                        <li>l</li>
-                        <li>xl</li>
-                        <li>2xl</li>
-                        <li>3xl</li>
-                        <li>4xl</li>
-                    </ul>
-                    <div><a class="button button-main" href="html/checkout.html">Add to cart</a></div>
+                    <img class="drop-shadow" src="../images/Jacket2.png" alt="Gray women's run jacket. Price 32€">
+                    <div class="checkout-details">
+                        <p>The SCOTT Run Women's Jacket</p>
+                        <p>Size: M</p>
+                        <p>Color: Grey</p>
+                    </div>
+                    <div class="card-flex">
+                        <p class="fw-bold">Quantity</p>
+                        <p class="fw-bold">&minus; <span class="checkout-border">1</span> &plus;</p>
+                    </div>
+                    <div class="card-flex">
+                        <p class="fw-bold">Price</p>
+                        <p class="fw-bold">32 &#8364;</p>
+                    </div>
+                    <div class="card-flex">
+                        <p class="fw-bold">Shipping</p>
+                        <p class="fw-bold">10 &#8364;</p>
+                    </div>
+                    <hr>
+                    <div class="card-flex">
+                        <p class="tt-uppercase fw-bold">Total</p>
+                        <p class="fw-bold">42 &#8364;</p>
+                    </div>
                 </div>
-            </div>
+                <a class="button button-main checkout-button" href="payment.html">Payment</a>
+            </section>
         </div>
     </main>
 
@@ -102,8 +92,8 @@
             <div>
                 <p class="tt-uppercase">Products</p>
                 <ul aria-label="footer" role="list" class="footer-list">
-                    <li><a href="html/shop.html">Women's jackets</a></li>
-                    <li><a href="html/shop.html">Men's jackets</a></li>
+                    <li><a href="shop.html">Women's jackets</a></li>
+                    <li><a href="shop.html">Men's jackets</a></li>
                 </ul>
             </div>
             <div>
@@ -139,5 +129,4 @@
     </footer>
 
 </body>
-
 </html>
