@@ -612,7 +612,7 @@ footer a:hover {
 /* Checkout page */
 
 .checkout-mobile {
-    max-width: 30rem;
+    max-width: 70rem;
     border: 1px solid var(--clr-neutral-100);
     border-radius: 8px;
     padding: 1.5rem;
@@ -651,10 +651,25 @@ footer a:hover {
 
 .checkout-button {
     width: 100%;
-    max-width: 30rem;
+    max-width: 70rem;
     margin: 2rem auto;
 }
 
-@media (min-width: 55em) {
- 
+
+/* Payment page */
+
+.payment-cards__flex {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
 }
+
+.payment-cards__flex img{
+    min-width: 15%;
+} 
+
+.payment input {
+width: 100%;
+padding: 0.7rem;
+}
+
