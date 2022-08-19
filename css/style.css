@@ -131,7 +131,8 @@ svg {
   }
 }
 
-/* Utility classes */
+/* Utility clases 
+------------------------------------------*/
 
 .text-primary-400 {
   color: var(--clr-primary-400);
@@ -204,6 +205,10 @@ svg {
 
 .fs-900 {
   font-size: var(--fs-900);
+}
+
+.ff-heading {
+    font-family: var(--ff-heading);
 }
 
 .bg-primary {
@@ -291,7 +296,8 @@ svg {
   text-decoration: underline;
 }
 
-/* Button */
+/* Button
+------------------------------------------*/
 
 .button {
   cursor: pointer;
@@ -332,7 +338,8 @@ svg {
   border: 2px solid var(--clr-primary-400);
 }
 
-/* General styling | Homepage */
+/* General styling | Homepage 
+------------------------------------------*/
 
 body {
   font-size: var(--fs-400);
@@ -404,7 +411,8 @@ body {
   margin-right: 0.7rem;
 }
 
-/* Navigation */
+/* Navigation
+------------------------------------------*/
 
 .primary-header {
   background: rgba(255, 255, 255, 0.8);
@@ -492,7 +500,8 @@ body {
   margin: 1rem auto;
 }
 
-/* Newsletter */
+/* Newsletter
+------------------------------------------*/
 
 .subscription {
   text-align: center;
@@ -508,7 +517,8 @@ input {
   margin: 1rem 0;
 }
 
-/* Footer */
+/* Footer
+------------------------------------------*/
 
 footer :any-link i,
 a {
@@ -519,7 +529,8 @@ footer a:hover {
   color: var(--clr-primary-200);
 }
 
-/* Shop page */
+/* Shop page
+------------------------------------------*/
 
 .card {
   position: relative;
@@ -561,7 +572,8 @@ footer a:hover {
   right: 1.8rem;
 }
 
-/* Jacket page */
+/* Jacket page 
+------------------------------------------*/
 
 .grid-column1 {
   display: grid;
@@ -582,9 +594,9 @@ footer a:hover {
 }
 
 .jacket-size__grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
 
 .size-list > li {
@@ -596,80 +608,82 @@ footer a:hover {
 }
 
 .jacket-button {
-    width: 100%;
-    max-width: 56.5rem;
-    margin: 2rem 0 0 auto;
+  width: 100%;
+  max-width: 56.5rem;
+  margin: 2rem 0 0 auto;
 }
 
 @media (min-width: 55em) {
-    .grid-column1 {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
+  .grid-column1 {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
 }
 
-
-/* Checkout page */
+/* Checkout page
+------------------------------------------*/
 
 .checkout-mobile {
-    max-width: 70rem;
-    border: 1px solid var(--clr-neutral-100);
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin: 1rem auto 2rem auto;
-    box-shadow: 5px 10px 7px var(--clr-neutral-100);
-    background-color: #fff;
+  max-width: 70rem;
+  border: 1px solid var(--clr-neutral-100);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem auto 2rem auto;
+  box-shadow: 5px 10px 7px var(--clr-neutral-100);
+  background-color: #fff;
 }
 
 .checkout-title {
-    text-align: center;
+  text-align: center;
 }
 
 .checkout-mobile i {
-    margin: 0 0.4rem;
+  margin: 0 0.4rem;
 }
 
 .checkout-mobile hr {
-    max-width: 90%;
-    margin: 1rem auto;
+  max-width: 90%;
+  margin: 1rem auto;
 }
 
 .checkout-mobile img {
-    margin: 1rem auto;
+  margin: 1rem auto;
 }
 
 .checkout-details {
-    text-align: left;
+  text-align: left;
 }
 
 .checkout-border {
-    border: 1px solid var(--clr-neutral-100);
-    border-radius: 4px;
-    padding: 0.4rem 0.8rem;
-    margin: 0.8rem;
+  border: 1px solid var(--clr-neutral-100);
+  border-radius: 4px;
+  padding: 0.4rem 0.8rem;
+  margin: 0.8rem;
 }
 
 .checkout-button {
-    width: 100%;
-    max-width: 70rem;
-    margin: 2rem auto;
+  width: 100%;
+  max-width: 70rem;
+  margin: 2rem auto;
 }
 
-
-/* Payment page */
+/* Payment page
+------------------------------------------*/
 
 .payment-cards__flex {
-    display: flex;
-    justify-content: flex-start;
-    gap: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 
-.payment-cards__flex img{
-    min-width: 15%;
-} 
+.payment-cards__flex img {
+  min-width: 15%;
+}
 
 .payment input {
-width: 100%;
-padding: 0.7rem;
+  width: 100%;
+  padding: 0.7rem;
 }
 
+/* Contact page
+------------------------------------------*/
