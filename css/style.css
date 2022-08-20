@@ -661,11 +661,45 @@ footer a:hover {
   margin: 0.8rem;
 }
 
+.checkout-img {
+    max-width: 100%;
+}
+
 .checkout-button {
   width: 100%;
   max-width: 70rem;
   margin: 2rem auto;
 }
+
+.checkout-order {
+    display: none;
+}
+
+
+@media (min-width: 55em) {
+.checkout-details {
+    display: none;
+}
+
+.checkout-order {
+    display: block;
+    width: 100%;
+    height: 25rem;
+}
+
+.checkout-img {
+    max-width: 40%;
+}
+
+.checkout-mobile hr {
+    max-width: 100%;
+    margin: 2rem 3rem auto;
+  }
+
+  .checkout-button__web {
+    display: none;
+  }
+} 
 
 /* Payment page
 ------------------------------------------*/
@@ -680,9 +714,35 @@ footer a:hover {
   min-width: 15%;
 }
 
+.payment-icons {
+    max-width: 40rem;
+}
+
 .payment input {
   width: 100%;
   padding: 0.7rem;
+}
+
+.custom-select {
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.payment-button {
+   text-align: center;
+}
+
+
+/* Completed page
+------------------------------------------*/
+.completed-heading {
+    text-align: center;
+}
+
+.container-small {
+    max-width: 40rem;
+    padding: 1rem;   
 }
 
 /* Contact page
