@@ -259,7 +259,6 @@ label {
   gap: 1rem;
   margin-bottom: 2rem;
   padding: var(--padding-200);
-  justify-items: start;
 }
 
 @media (min-width: 55em) {
@@ -407,6 +406,10 @@ body {
 .main-bg {
   background-image: url(../images/Texture2.png);
   padding: 2rem 0;
+}
+
+.main-bg__padding {
+  padding: 0 0 2rem 0;
 }
 
 .section-one {
@@ -582,6 +585,10 @@ body {
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
   }
 
+  .navigation-header {
+    padding: 20px 25px;
+  }
+
   .navigation-icons {
     display: none;
   }
@@ -701,6 +708,10 @@ footer a:hover {
   border-radius: 8px;
 }
 
+.size-list > li:hover {
+  background-color: var(--clr-neutral-100);
+}
+
 .jacket-button {
   display: flex;
   justify-content: center;
@@ -764,7 +775,6 @@ footer a:hover {
 }
 
 .checkout-button {
-  width: 100%;
   max-width: 70rem;
   margin: 2rem auto;
 }

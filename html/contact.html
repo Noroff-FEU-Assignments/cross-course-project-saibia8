@@ -36,7 +36,7 @@
         <div class="navigation-icons">
             <a class="navigation-icons__margin" aria-label="magnifying glass" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a class="navigation-icons__margin" aria-label="shopping cart" href="#"><i class="fa-solid fa-heart"></i></a>
-            <a class="navigation-icons__margin" aria-label="like button" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a class="navigation-icons__margin" aria-label="like button" href="/html/checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
           </div>   
 </header>
 
@@ -52,17 +52,20 @@
             </div>
 
             <div>
-                <h1 class="tt-uppercase fs-600 ff-heading">Contact us</h1>
+                <h1 class="tt-uppercase fw-bold fs-600 inline-block margin-bottom">Contact us</h1>
                 <div class="contact-margin">
                     <form method="post">
-                        <input class="full-width block contact-margin" placeholder="Full name" type="name">
-                        <input class="full-width contact-margin" placeholder="Email" type="email" name="email">
+                        <label for="full-name">Full name</label>
+                        <input class="full-width block contact-margin" id="full-name" type="name">
+                        <label for="email">Email</label>
+                        <input class="full-width contact-margin" id="email" type="email" name="email">
                         <label for="message">Message:</label>
                         <textarea class="full-width" name="text" id="message" cols="30" rows="5" maxlength="100"></textarea>
                     </form>
                 </div>
                 <div class="contact-button"><a href="#"><button class="button button-secondary contact-margin">Send</button></a></div>
                 <div>
+                    <p class="tt-uppercase fw-bold">Address:</p>
                     <ul role="list">
                         <li><i class="fa-solid fa-location-dot"></i> London, 21 Old Gloucester Street</li>
                         <li><i class="fa-solid fa-phone"></i> +44 93 1284 6486</li>
