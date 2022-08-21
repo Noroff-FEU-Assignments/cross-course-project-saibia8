@@ -406,7 +406,7 @@ body {
 
 .main-bg {
   background-image: url(../images/Texture2.png);
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 .section-one {
@@ -435,91 +435,156 @@ body {
 
 /* Navigation
 ------------------------------------------*/
-
-.primary-header {
-  background: rgba(255, 255, 255, 0.8);
-  height: 5rem;
-  text-align: center;
-  /* position: absolute; */
-  z-index: 999;
+.navigation-header {
+  position: relative;
   width: 100%;
-}
-
-.nav-toggle {
-  display: none;
-}
-
-.nav-toggle-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 1em;
-  height: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 0 25px;
+  transition: 0.3s;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.logo a {
+  display: block;
+}
+
+.logo a img {
+  display: block;
+  width: 7rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  display: block;
-  background: var(--clr-primary-400);
-  height: 3px;
-  width: 2em;
-  border-radius: 4px;
-  position: relative;
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+  transition: 0.5s;
 }
 
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
+.menu li a {
+  display: block;
+  padding: 40px 25px;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  box-shadow: 0 -5px 0 var(--clr-primary-400) inset,
+    500px 0 0 rgba(255, 255, 255, 0.03) inset;
+  padding: 35px 25px 45px 25px;
+}
+
+.hamburger {
+  position: relative;
+  width: 30px;
+  height: 4px;
+  background: var(--clr-primary-400);
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+.hamburger:before,
+.hamburger:after {
   content: "";
   position: absolute;
+  height: 4px;
+  right: 0;
+  background: var(--clr-primary-400);
+  border-radius: 8px;
+  transition: 0.3s;
 }
 
-.nav-toggle-label span::before {
-  bottom: 7px;
+.hamburger:before {
+  top: -10px;
+  width: 20px;
 }
 
-.nav-toggle-label span::after {
-  top: 7px;
+.hamburger:after {
+  top: 10px;
+  width: 25px;
 }
 
-.primary-navigation {
+.toggle-menu {
   position: absolute;
-  text-align: left;
-  top: 100%;
-  left: 0;
-  padding-left: 1rem;
-  background: rgba(255, 255, 255, 0.8);
+  width: 30px;
+  height: 100%;
+  z-index: 3;
   cursor: pointer;
-  width: 100%;
-  transform: scale(1, 0);
-  transform-origin: top;
-  transition: transform 400ms ease-in-out;
+  opacity: 0;
 }
 
-.primary-navigation a {
-  color: var(--clr-primary-400);
+.hamburger,
+.toggle-menu {
+  display: none;
 }
 
-.primary-navigation li:hover {
-  text-decoration: underline;
+.navigation-icons__margin {
+  margin: 0 1rem;
 }
 
-.nav-toggle:checked ~ .primary-navigation {
-  transform: scale(1, 1);
+.navigation input:checked ~ .hamburger {
+  background: transparent;
 }
 
-@media (min-width: 55em) {
-  .nav-toggle-label {
+.navigation input:checked ~ .hamburger:before {
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+}
+
+.navigation input:checked ~ .hamburger:after {
+  top: 0;
+  transform: rotate(45deg);
+  width: 30px;
+}
+
+.navigation input:checked ~ .menu {
+  right: 0px;
+}
+
+@media (max-width: 55em) {
+  .hamburger,
+  .toggle-menu {
+    display: block;
+  }
+
+  .menu {
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    background: #fff;
+    width: 300px;
+    height: 100%;
+    padding-top: 65px;
+  }
+  .menu li {
+    width: 100%;
+  }
+
+  .menu li a,
+  .menu li a:hover {
+    padding: 30px;
+    font-size: 24px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+  }
+
+  .navigation-icons {
     display: none;
   }
-}
-
-.logo {
-  width: 100px;
-  height: auto;
-  margin: 1rem auto;
 }
 
 /* Newsletter
