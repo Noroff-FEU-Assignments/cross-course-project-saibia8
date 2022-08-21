@@ -45,7 +45,7 @@
 
     <main class="main-bg">
         <div class="container payment">
-            <h1 class="fs-600 fw-bold">Payment methods</h1>
+            <h1 class="fs-600 fw-bold ff-heading">Payment methods</h1>
             <div class="grid-column1">
                 <div>
                     <div class="payment-cards__flex payment-icons">
@@ -54,7 +54,7 @@
                         <img src="../images/Bitcoin_icon.png" alt="">
                         <img src="../images/Paypal_icon.png" alt="">
                     </div>
-                    <h2 class="fs-500 fw-bold">Credit card </h2>
+                    <h2 class="fs-500 fw-bold margin-bottom">Credit card </h2>
                     <div>
                         <form method="post">
                             <label for="cards" class="fs-400">Select a card:</label>
@@ -64,20 +64,25 @@
                                 <option value="bitcoin">Bitcoin</option>
                                 <option value="paypal">Paypal</option>
                             </select>
-                            <input placeholder="Cardholder name" type="name">
-                            <input placeholder="Card number" type="number" name="credit card" maxlength="20">
-                            <input placeholder="Month" type="month" name="start" min="2010-01" value="2010-01">
-                            <input placeholder="CCV (Back of card, last 3 digits)" type="number" maxlength="3">
+                            <label for="cardholder">Cardholder name</label>
+                            <input id="cardholder" type="name">
+                            <label for="card-number">Card number</label>
+                            <input id="card-number" type="number" name="credit card" maxlength="20">
+                            <label for="date">Valid</label>
+                            <input id="date" type="month" name="start" min="2010-01" value="2010-01">
+                            <label for="ccv">CCV</label>
+                            <input id="ccv" type="number" maxlength="3">
                         </form>
                     </div>
                 </div>
 
                 <div>
-                    <h2 class="fs-500 fw-bold">Billing information</h2>
+                    <h2 class="fs-500 fw-bold margin-bottom">Billing information</h2>
                     <form method="post">
-                        <input placeholder="First name" type="text" name="fname">
-                        <input placeholder="Last name" type="text" name="lname" id="lname">
-                        <input placeholder="Address" type="text" name="address">
+                        <label for="full-name">Full name</label>
+                        <input id="full-name" type="text" name="name">
+                        <label for="address">Address</label>
+                        <input id="address" type="text" name="address">
                         <label for="country">Select the country</label>
                         <select id="country" name="country" class="custom-select">
                             <option value="Afghanistan">Afghanistan</option>
@@ -331,9 +336,12 @@
                             <option value="Zambia">Zambia</option>
                             <option value="Zimbabwe">Zimbabwe</option>
                         </select>
-                        <input placeholder="Country code" type="country" name="Country code" maxlength="20">
-                        <input placeholder="Phone number" type="tel" maxlength="30">
-                        <input placeholder="Email" type="email">
+                        <label for="code">Country code</label>
+                        <input id="code" type="country" name="Country code" maxlength="20">
+                        <label for="tel">Phone number</label>
+                        <input id="tel" type="tel" maxlength="30">
+                        <label for="email">Email</label>
+                        <input id="email" type="email">
                     </form>
                 </div>
             </div>

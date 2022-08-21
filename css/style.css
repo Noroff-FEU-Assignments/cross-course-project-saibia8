@@ -40,6 +40,10 @@
   --padding-800: 7.5rem;
   --padding-900: 11.875rem;
 
+  --full-width: 100%;
+
+  --margin-bottom: 1rem;
+
   --bg-primary: var(--clr-primary-400);
 
   @media (min-width: 55em) {
@@ -208,19 +212,36 @@ svg {
 }
 
 .ff-heading {
-    font-family: var(--ff-heading);
+  font-family: var(--ff-heading);
+  letter-spacing: 1.4px;
 }
 
 .bg-primary {
   background-color: var(--clr-primary-400);
 }
 
+label {
+  display: block;
+}
+
 .drop-shadow {
   filter: drop-shadow(4px 5px 4px var(--clr-neutral-900));
 }
 
+.full-width {
+  width: 100%;
+}
+
+.margin-bottom {
+  margin-bottom: 1rem;
+}
+
 .inline-block {
   display: inline-block;
+}
+
+.block {
+  display: block;
 }
 
 .container {
@@ -235,9 +256,10 @@ svg {
   display: grid;
   grid-template-columns: 0.65fr 1fr 0.65fr;
   justify-items: center;
-  gap: var(--padding-100);
+  gap: 1rem;
   margin-bottom: 2rem;
   padding: var(--padding-200);
+  justify-items: start;
 }
 
 @media (min-width: 55em) {
@@ -355,7 +377,7 @@ body {
   .heading-web h1 {
     background-color: rgba(3, 29, 64, 0.55);
     padding-left: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .section-one a {
@@ -512,9 +534,10 @@ body {
   width: 100%;
 }
 
-input {
+.form__subscribe input {
   width: 65%;
   margin: 1rem 0;
+  padding: var(--padding-100);
 }
 
 /* Footer
@@ -582,11 +605,17 @@ footer a:hover {
 }
 
 .jacket-position {
-  justify-self: center;
   border: 1px solid var(--clr-neutral-900);
   padding: var(--padding-200);
   background-color: #fff;
   border-radius: 8px;
+  max-width: 30rem;
+}
+
+.jacket-position,
+.jacket-info {
+  justify-self: center;
+  align-self: center;
 }
 
 .jacket-details li {
@@ -608,15 +637,19 @@ footer a:hover {
 }
 
 .jacket-button {
-  width: 100%;
-  max-width: 56.5rem;
-  margin: 2rem 0 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.jacket-info__web {
+  max-width: 30rem;
 }
 
 @media (min-width: 55em) {
   .grid-column1 {
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 2rem;
   }
 }
 
@@ -662,7 +695,7 @@ footer a:hover {
 }
 
 .checkout-img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .checkout-button {
@@ -672,34 +705,37 @@ footer a:hover {
 }
 
 .checkout-order {
-    display: none;
+  display: none;
 }
-
 
 @media (min-width: 55em) {
-.checkout-details {
+  .checkout-details {
     display: none;
-}
+  }
 
-.checkout-order {
+  .checkout-height {
+    height: 25rem;
+  }
+
+  .checkout-order {
     display: block;
     width: 100%;
     height: 25rem;
-}
+  }
 
-.checkout-img {
-    max-width: 40%;
-}
+  .checkout-img {
+    max-height: 75%;
+  }
 
-.checkout-mobile hr {
-    max-width: 100%;
-    margin: 2rem 3rem auto;
+  .checkout-mobile hr {
+    max-width: 90%;
+    margin: 7rem 3rem auto;
   }
 
   .checkout-button__web {
     display: none;
   }
-} 
+}
 
 /* Payment page
 ------------------------------------------*/
@@ -715,35 +751,71 @@ footer a:hover {
 }
 
 .payment-icons {
-    max-width: 40rem;
+  max-width: 40rem;
 }
 
 .payment input {
   width: 100%;
   padding: 0.7rem;
+  margin-bottom: 1rem;
 }
 
 .custom-select {
-    width: 100%;
-    height: 3rem;
-    margin-bottom: 1rem;
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 1rem;
 }
 
 .payment-button {
-   text-align: center;
+  text-align: center;
 }
-
 
 /* Completed page
 ------------------------------------------*/
 .completed-heading {
-    text-align: center;
+  text-align: center;
 }
 
 .container-small {
-    max-width: 40rem;
-    padding: 1rem;   
+  max-width: 40rem;
+  padding: 1rem;
 }
 
 /* Contact page
 ------------------------------------------*/
+
+.grid-column1 iframe {
+  max-width: 100%;
+  height: 100%;
+  flex: 1 0 auto;
+}
+
+.img-reverse {
+  order: -1;
+  justify-self: center;
+}
+
+.contact-margin {
+  margin-bottom: 1rem;
+}
+
+.contact-button {
+  display: flex;
+  justify-content: start;
+}
+
+@media (min-width: 55em) {
+  .img-reverse {
+    order: 1;
+  }
+
+  .contact-button {
+    justify-content: end;
+  }
+}
+
+/* About page
+------------------------------------------*/
+.about-img {
+  max-width: 20rem;
+}
