@@ -295,7 +295,7 @@ label {
   margin: 2rem 0.7rem;
 }
 
-@media (min-width: 55em) {
+@media (max-width: 55em) {
   .flex-center__row {
     gap: var(--padding-700);
   }
