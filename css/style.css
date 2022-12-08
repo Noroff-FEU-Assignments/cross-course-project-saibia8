@@ -180,7 +180,6 @@ svg {
 
 .fs-primary-heading {
   font-size: var(--fs-800);
-  line-height: 1.2;
 }
 
 .fs-200 {
@@ -236,6 +235,10 @@ label {
   margin-bottom: 1rem;
 }
 
+.margin-bottom-half {
+  margin-bottom: 0.5rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -288,6 +291,10 @@ label {
   object-fit: cover;
 }
 
+.img-border :hover img {
+border: 2px solid var(--clr-primary-400);
+}
+
 .flex-center__row {
   display: flex;
   justify-content: center;
@@ -313,9 +320,6 @@ label {
   float: right;
 }
 
-.underline {
-  text-decoration: underline;
-}
 
 /* Button
 ------------------------------------------*/
@@ -336,6 +340,8 @@ label {
   background-color: var(--clr-accent-400);
   border-radius: 8px;
   border: 2px solid var(--clr-accent-400);
+  max-width: 25rem;
+  padding: 0.6rem 3rem;
 }
 
 .button-secondary {
@@ -374,15 +380,10 @@ body {
   }
 
   .heading-web h1 {
-    background-color: rgba(3, 29, 64, 0.55);
-    padding-left: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  .section-one a {
-    position: absolute;
-    right: 0;
-    padding: 0.8em 2.7em;
+    background-color: rgba(2, 23, 48, 0.55);
+    margin: 3rem 0 2rem 0;
+    text-align: center;
+    padding: 1rem 2rem;
   }
 }
 
@@ -392,10 +393,10 @@ body {
   }
   .heading-mobile {
     display: inline-block;
-    background-color: var(--clr-primary-400);
+    background-color: rgba(1, 14, 31, 0.55);
     padding: 0.5rem;
     font-size: var(--fs-600);
-    margin-bottom: 1rem;
+    margin: 1rem 4rem;
     text-align: center;
   }
   .section-one a {
@@ -413,17 +414,19 @@ body {
 }
 
 .section-one {
-  background-image: url(../images/Main-photo.jpg);
+  background-image: url(../images/back-view-of-a-man-standing-with-his-arms-spread-in-laguna.jpg);
   background-size: cover;
   background-position-x: center;
-  background-position-y: bottom;
+  background-position-y: 25%;
   min-height: 100vh;
   margin-bottom: 1rem;
 }
 
 .section-one .container {
-  position: relative;
-  top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .card-small hr {
@@ -436,6 +439,18 @@ body {
   margin-right: 0.7rem;
 }
 
+.border-bottom {
+  border-bottom: 1px solid var(--clr-neutral-900); 
+}
+
+.card--small img {
+  padding-bottom: 1rem;
+}
+
+label {
+  margin-top: 1.5rem;
+}
+
 /* Navigation
 ------------------------------------------*/
 .navigation-header {
@@ -444,10 +459,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fff;
+  background: white;
   padding: 0 25px;
   transition: 0.3s;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }
 
 .logo a {
@@ -476,14 +491,15 @@ body {
 
 .menu li a {
   display: block;
-  padding: 40px 25px;
+  padding: 30px 25px;
   transition: 0.3s;
 }
 
 .menu li a:hover {
   box-shadow: 0 -5px 0 var(--clr-primary-400) inset,
     500px 0 0 rgba(255, 255, 255, 0.03) inset;
-  padding: 35px 25px 45px 25px;
+  padding: 30px 25px 30px 25px;
+  color: var(--clr-primary-300);
 }
 
 .hamburger {
@@ -569,7 +585,7 @@ body {
     position: fixed;
     top: 0;
     right: -300px;
-    background: #fff;
+    background: white;
     width: 300px;
     height: 100%;
     padding-top: 65px;
@@ -586,7 +602,7 @@ body {
   }
 
   .navigation-header {
-    padding: 20px 25px;
+    padding: 18px 25px;
   }
 
   .navigation-icons {
@@ -607,7 +623,7 @@ body {
 }
 
 .form__subscribe input {
-  width: 65%;
+  width: 45%;
   margin: 1rem 0;
   padding: var(--padding-100);
 }
