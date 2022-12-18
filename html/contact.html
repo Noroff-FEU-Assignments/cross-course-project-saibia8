@@ -16,7 +16,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/968ab2ea9d.js" crossorigin="anonymous"></script>
-    <!-- Hotjar Tracking Code for https://voluble-hotteok-89ce46.netlify.app/index.html -->
+   <!-- Hotjar Tracking Code for https://voluble-hotteok-89ce46.netlify.app/index.html -->
 <script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -49,8 +49,8 @@
 
         <div class="navigation-icons">
             <a class="navigation-icons__margin" aria-label="magnifying glass" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a class="navigation-icons__margin" aria-label="shopping cart" href="#"><i class="fa-solid fa-heart"></i></a>
-            <a class="navigation-icons__margin" aria-label="like button" href="/html/checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a class="navigation-icons__margin" aria-label="shopping cart" href="#"><i class="fa-regular fa-heart"></i></a>
+            <a class="navigation-icons__margin" aria-label="like button" href="/html/cart.html"><i class="fa-solid fa-cart-shopping"></i><span class="cart-numbers">0</span></a>
           </div>   
 </header>
 
@@ -66,18 +66,38 @@
             </div>
 
             <div>
-                <h1 class="tt-uppercase fw-bold fs-600 inline-block margin-bottom">Contact us</h1>
+                <div class="successful-form"></div>
+                <h1 class="tt-uppercase fw-bold fs-600 text-center">Contact us</h1>
                 <div class="contact-margin">
-                    <form method="post">
-                        <label for="full-name">Full name</label>
-                        <input class="full-width block contact-margin" id="full-name" type="name">
-                        <label for="email">Email</label>
-                        <input class="full-width contact-margin" id="email" type="email" name="email">
-                        <label for="message">Message:</label>
-                        <textarea class="full-width" name="text" id="message" cols="30" rows="5" maxlength="100"></textarea>
+                    <form method="post" id="contactForm">
+                        <div>
+                            <label>
+                               Name (required)
+                                <input type="text" id="name" class="form-contact" name="name">
+                            </label>
+                            <div class="form-error" id="nameError">Please enter your name</div>
+                        </div>
+
+                        <div>
+                            <label>
+                                Email (required)
+                                <input type="email" id="email" class="form-contact" name="email">
+                            </label>
+                            <div class="form-error" id="emailError">Please enter a valid email address</div>
+                        </div>
+
+                        <div>
+                            <label>
+                                Message (minimum 10 characters)
+                            </label>
+                            <textarea class="full-width" type="text" id="message" cols="30" rows="5" maxlength="1000" name="message"></textarea>
+                            <div class="form-error" id="messageError">Your message must be at least 10 characters</div>
+                        </div>
+
+                        <div class="contact-button"><a href="#"><button class="button button-secondary contact-margin full-width">Send</button></a></div>
                     </form>
                 </div>
-                <div class="contact-button"><a href="#"><button class="button button-secondary contact-margin full-width margin-bottom-3">Send</button></a></div>
+               
                 <div>
                     <p class="tt-uppercase fw-bold margin-bottom-half">Address:</p>
                     <ul role="list">
@@ -132,11 +152,11 @@
                                     class="fa-brands fa-twitter"></i></a></li>
                     </ul>
                 </div>
-                <p>&#169; 2022 Rainydays. All Rights Reserved.</p>
+                <p>&#169; 2022 Rainydays. <br>All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-
+    <script src="../js/cart.js"></script>
+<script src="../js/contact-form.js"></script>
 </body>
-
 </html>
