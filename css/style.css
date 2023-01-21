@@ -89,9 +89,9 @@ body {
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  display: grid; 
-  min-height: 100vh; 
-  grid-template-rows: auto 1fr auto
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
 }
 
 /* A elements that don't have a class get default styles */
@@ -114,7 +114,7 @@ svg {
 }
 
 :any-link i:not(.heart, footer i) {
-  color: var(--clr-primary-400); 
+  color: var(--clr-primary-400);
   font-size: 1.3rem;
 }
 
@@ -299,7 +299,7 @@ label {
 }
 
 .img-border :hover img {
-border: 2px solid var(--clr-primary-400);
+  border: 2px solid var(--clr-primary-400);
 }
 
 .flex-center__row {
@@ -326,7 +326,6 @@ border: 2px solid var(--clr-primary-400);
 .float-right {
   float: right;
 }
-
 
 /* Button
 ------------------------------------------*/
@@ -447,7 +446,7 @@ body {
 }
 
 .border-bottom {
-  border-bottom: 1px solid var(--clr-neutral-900); 
+  border-bottom: 1px solid var(--clr-neutral-900);
 }
 
 .card--small img {
@@ -714,7 +713,6 @@ footer a:hover {
 .heart {
   font-size: 1.5rem;
   color: grey;
-  
 }
 
 .heart:hover {
@@ -870,8 +868,8 @@ footer a:hover {
 /* Payment page
 ------------------------------------------*/
 .container-form {
-max-width: 35rem;
-margin: 0 auto;
+  max-width: 35rem;
+  margin: 0 auto;
 }
 
 .container-form input {
@@ -949,8 +947,7 @@ margin: 0 auto;
   display: block;
   width: 100%;
   padding: 0.5rem;
-} 
-
+}
 
 @media (min-width: 55em) {
   .img-reverse {
@@ -1032,7 +1029,6 @@ margin: 0 auto;
   color: rgb(17, 121, 64);
 }
 
-
 /* Cart numbers
 ------------------------------------------*/
 .cart-numbers {
@@ -1049,7 +1045,6 @@ margin: 0 auto;
   display: inline-block;
   text-align: center;
 }
-
 
 /* Cart page
 ------------------------------------------*/
@@ -1142,6 +1137,68 @@ margin: 0 auto;
 }
 
 .border-bottom {
-  border-bottom: 1px solid grey; 
+  border-bottom: 1px solid grey;
 }
+
+/* Loader
+------------------------------------------*/
+.loader {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: conic-gradient(#0000 10%, #031d40);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: s3 1s infinite linear;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+@keyframes s3 {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* Error message
+------------------------------------------*/
+.error {
+  background-color:#fecfbf;
+  border: 1px solid #fc7b50;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  max-width: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+/* Jacket page image size
+------------------------------------------*/
+.single-image {
+  width: 18rem;
+}
+
+/* Select styling
+------------------------------------------*/
+.per-page-items {
+  width: 100%;
+  min-width: 15ch;
+  max-width: 26ch;
+  border: 1px solid var(--clr-primary-400);
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  
+}
+
+@media (max-width: 55em) {
+.per-page-items {
+   margin-bottom: 1rem;
+}
+}
+
 
