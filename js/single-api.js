@@ -1,7 +1,6 @@
 const jacketContainer = document.querySelector(".grid-column1");
 const errorMessage = document.querySelector(".error-message");
 const loader = document.querySelector(".loader");
-// const sizeSelect = document.querySelector(".size-select");
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -47,11 +46,6 @@ function createHtml(details) {
                                  </div>`;
 }
 
-// sizeSelect.onchange() = function(event) {
-//    const newUrl = url + `?attributes[0].options=${event.target.value}`;
-//    console.log(newUrl);
-//    jacketContainer.innerHTML = "";
-//    fetchJacket(newUrl);
-// }
+
 
 

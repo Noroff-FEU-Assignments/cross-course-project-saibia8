@@ -1202,3 +1202,6 @@ footer a:hover {
 }
 
 
+.selection {
+  display: none;
+}
