@@ -2,14 +2,16 @@
 
 <img src="/images/rainyDaysScreenshoot.jpg" width="500">
 
-I had to design and code the fictional online shop for the Rainy Days.
+My task - to design and code the fictional online shop for the Rainy Days.
+
+[Link to the live website](https://voluble-hotteok-89ce46.netlify.app/)
 
 ## Description
 This project consists of two parts:
 
-1. This is my first work with HTML and CSS in my life. Project requirements was: semantic HTML, DRY CSS, the website should be responsive and look good at every screen size, WCAG compliant and accessibility taken into account.
+1. First, the website was coded with HTML and CSS only. Project requirements was: semantic HTML, DRY CSS, the website should be responsive and look good at every screen size, WCAG compliant and accessibility taken into account.
 2. Later in my studies this project was updated with Javascript and CMS. I had installed WordPress on my web host and set it to be headless. With the help of the WooCommerce plugin added products to the site. Using JavaScript, fetched the data from the WordPress REST API and added it to my website. Using query string parameters the user can click on an individual item in the product list and take them to see that product. Later it can be added to the shopping cart with updated prices and item quantity. 
-Unfortunately, this version of the site no longer works because I deleted WordPress with all products. Error message displayed instead of fetched data.
+Unfortunately, this version of the site no longer works because I deleted WordPress with all products. An error message will be displayed instead of fetched data.
 
 ## Built With
 
@@ -22,8 +24,6 @@ Unfortunately, this version of the site no longer works because I deleted WordPr
 ## Getting Started
 
 ### Installing
-
-Clone the repo and then to install the dependencies.
 
 1. Clone the repo:
 
@@ -52,6 +52,8 @@ If you would like to participate in this project, feel free to suggest improveme
 ## Contact
 
 [My LinkedIn page](https://www.linkedin.com/in/sabina-kutniauske-46a486238/)
+
+[Email me](mailto:sabina.kutniauske@gmail.com)
 
 ## Acknowledgments
 
